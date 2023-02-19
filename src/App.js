@@ -26,6 +26,9 @@ function App() {
       } else if (keyValue === "Backspace") {
         setInput(input.slice(0, -1));
         setResult("");
+      } else if (keyValue === "c") {
+        setInput("");
+        setResult("");
       }
     }
     window.addEventListener("keydown", handleKeyPress);
